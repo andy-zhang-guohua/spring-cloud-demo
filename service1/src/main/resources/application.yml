@@ -16,3 +16,6 @@ service0:
     ReadTimeout: 1000
     ConnectTimeout: 500
     MaxAutoRetries: 1  # SR6版本,这里设为1,会重试3次,重试次数还和另外的两个值有关
+feign:
+  hystrix:
+    enabled: true # 缺省情况下， feign 中的 hystrix 是关闭的，使用此开关将其打开

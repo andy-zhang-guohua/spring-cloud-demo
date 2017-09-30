@@ -35,6 +35,7 @@
         5.1 运行在本地 localhost 的端口 8082
         5.2 要求注册中心服务运行在 http://127.0.0.1:8080/eureka/ 
         5.3 要求配置服务器运行在 http://localhost:8084,程序缺省要读取的配置来自应用 service1 的分支 master
+        5.4 feign.hystrix.enabled=true 用来演示feign服务调用中hystrix的熔断机制
     6. gateway
         6.1 运行在本地 localhost 的端口 9099   
         6.2 要求注册中心服务运行在 http://127.0.0.1:8080/eureka/
