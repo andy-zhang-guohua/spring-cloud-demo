@@ -4,7 +4,7 @@ eureka:
   instance:
     hostname: localhost
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: false #禁止服务器将自身作为客户端注册进来
+    fetchRegistry: false #作为服务注册中心，本身不需要从服务注册中心也就是自己获取注册信息
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/  #其实就是 http://localhost:8080/eureka/
